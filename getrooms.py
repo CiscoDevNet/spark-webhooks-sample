@@ -4,9 +4,6 @@ import requests
 
 # the main function
 def main():
-    # define a variable for the hostname of Spark
-    hostname = "api.ciscospark.com"
-
     # login to developer.ciscospark.com and copy your access token here
     # Never hard-code access token in production environment
     token = "Bearer [access token]"
@@ -18,7 +15,7 @@ def main():
     requests.packages.urllib3.disable_warnings()
 
     # create request url
-    get_rooms_url = "https://" + hostname + "/v1/rooms"
+    get_rooms_url = "https://api.ciscospark.com/v1/rooms"
 
     # send GET request and do not verify SSL certificate for simplicity of this example
     api_response = requests.get(get_rooms_url, headers=header, verify=True)

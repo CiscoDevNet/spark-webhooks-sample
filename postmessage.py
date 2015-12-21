@@ -7,7 +7,7 @@ requests.packages.urllib3.disable_warnings()
 # the main function
 def main(person_id, person_email, room_id, text):
     # define a variable for the hostname of Spark
-    hostname = "api.ciscospark.com"
+    hostname = ""
 
     # login to developer.ciscospark.com and copy your access token here
     # Never hard-code access token in production environment
@@ -17,7 +17,7 @@ def main(person_id, person_email, room_id, text):
     header = {"Authorization": "%s" % token, "content-type": "application/json"}
 
     # specify request url
-    post_message_url = "https://" + hostname + "/hydra/api/v1/messages"
+    post_message_url = "https://api.ciscospark.com/v1/messages"
 
     # create message in Spark room
     payload = {

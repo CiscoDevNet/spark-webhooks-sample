@@ -4,9 +4,6 @@ import requests, json
 
 # the main function
 def main():
-    # define a variable for the hostname of Spark
-    hostname = "api.ciscospark.com"
-
     # login to developer.ciscospark.com and copy your access token here
     # Never hard-code access token in production environment
     token = "Bearer [access token]"
@@ -18,14 +15,14 @@ def main():
     requests.packages.urllib3.disable_warnings()
 
     # create request url
-    post_message_url = "https://" + hostname + "/v1/webhooks"
+    post_message_url = "https://api.ciscospark.com/v1/webhooks"
 
     # create request body
     payload = {
         "resource": "messages",
         "event": "created",
         "filter": "roomId=[room_id]",
-        "targetUrl": "http://10.10.10.10/webhook",
+        "targetUrl": "[webapp_url]",
         "name": "[webhook_name]"
     }
 

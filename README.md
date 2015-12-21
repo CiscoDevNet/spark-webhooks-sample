@@ -14,34 +14,14 @@
 You will need to install [Python 3.4](https://www.python.org/downloads/), the [Requests](http://docs.python-requests.org/en/latest/user/install/) library, and [Flask](http://flask.pocoo.org/) to run the application.
 
 This sample app consists of the following Python files:
-  * getrooms.py
-  * postwebhook.py
-  * webhookapp.py
-  * getmessage.py
-  * gethosts.py
-  * postmessage.py
+  * **webhookapp.py** - *the main app*
+  * **getrooms.py** - *get the Spark room id*
+  * **postwebhook.py** - *create a Spark webhook*
+  * **getmessage.py** - *get the text of the new message*
+  * **gethosts.py** - *get hosts from APIC-EM*
+  * **postmessage.py** - *post message to Spark room*
 
-> These files are for your reference. You won't be able to run the app unless you host the app on a publicly reachable IP address or domain. For this reason we are hosting the app in the Cisco Sandbox at 10.10.10.10.
-
-If you are running **Mac** or **Linux**, place the files in the following folder structure:
-* /bin
-  * getrooms.py
-  * postwebhook.py
-  * webhookapp.py
-* /lib/pythonX.X/site-packages/
-  * getmessage.py
-  * gethosts.py
-  * postmessage.py
-
-If you are running **Windows**, place the files in the following folder structure:
-  * /Scripts
-    * getrooms.py
-    * postwebhook.py
-    * webhookapp.py
-  * /Lib/site-packages
-    * getmessage.py
-    * gethosts.py
-    * postmessage.py
+> These files are for your reference. You won't be able to run the app unless you host the app on a publicly reachable IP address or domain.
 
 ## Usage
 
