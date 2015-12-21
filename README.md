@@ -4,7 +4,7 @@
 
 - **Technology stack**: Python 3.4 and Flask 0.10.1
 - **Status**:  First release v1.1 [CHANGELOG](CHANGELOG.md).
-- **Tutorial**: This sample code accompanies the 'Spark - Webhooks Intermdiate' learning lab at https://learninglabs.cisco.com
+- **Tutorial**: This sample code accompanies the 'Spark - Webhooks Intermediate' learning lab at https://learninglabs.cisco.com
 
 ![Webhook diagram](spark-apicem.jpg "Webhook diagram")
 
